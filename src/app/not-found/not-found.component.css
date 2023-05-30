@@ -1,0 +1,42 @@
+.box {
+    height: 100vh;
+    background-color: rgba(251, 254, 253, 0.876);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    color: var(--c-blue);
+    
+    word-spacing: 20px;
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+
+  button{
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    background-color: var(--c-purple);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--c-yellow);
+  }
+  

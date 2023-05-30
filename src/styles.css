@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;400&family=Roboto:wght@100;300;400&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --c-pink: #EED7EB;
+    --c-green: #DBEBCE;
+    --c-blue: #cedfeb;
+    --c-yellow: #FFEAA9;
+    --c-purple: #C9BDEB;
+    --c-grey: #f2f2f2cd;
+    --c-text: #212427;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--c-text);
+}
+
+.imgA{
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
