@@ -7,7 +7,10 @@
     --c-yellow: #FFEAA9;
     --c-purple: #C9BDEB;
     --c-grey: #f2f2f2cd;
+    --c-red: #e9acb9;
+    --c-white: #faf3f3d5;
     --c-text: #212427;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 *{
     padding: 0;

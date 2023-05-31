@@ -1,0 +1,67 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="form-column">
+  <label
+    >*Name
+    <input
+      class="inputs"
+      type="text"
+      placeholder="Intro your name"
+      formControlName="name"
+    />
+    <p class="error" *ngIf="nameInput.invalid && nameInput.touched">
+      Please, intro your name.
+    </p>
+  </label>
+  <label
+    >Occupation
+    <input
+      class="inputs"
+      type="text"
+      placeholder="Intro your occupation"
+      formControlName="occupation"
+    />
+  </label>
+  <label
+    >*Email
+    <input
+      class="inputs"
+      type="email"
+      placeholder="Intro your email"
+      formControlName="email"
+    />
+    <p class="error" *ngIf="emailInput.invalid && emailInput.touched">
+      Please, intro your email.
+    </p>
+  </label>
+  <label
+    >*Subject
+    <input
+      class="inputs"
+      type="text"
+      placeholder="Intro your subject"
+      formControlName="subject"
+    />
+    <p class="error" *ngIf="subjectInput.invalid && subjectInput.touched">
+      Please, intro your subject.
+    </p>
+  </label>
+  <label
+    >*Content
+    <textarea
+      class="inputs area"
+      type="text"
+      placeholder="Tell us..."
+      formControlName="content"
+      rows="5"
+    ></textarea>
+    <p class="error" *ngIf="contentInput.invalid && contentInput.touched">
+      Please, Your message must be between 10 and 255 characters.
+    </p>
+  </label>
+  <button type="submit" [disabled]="contactForm.invalid" [ngClass]="{'disabled-btn': contactForm.invalid, 'active-btn': !contactForm.invalid}">Submit</button>
+</form>
+<div class="msg" *ngIf="formSubmitted">
+  <span class="material-symbols-outlined"> mark_email_read </span>
+  <p>Thank you for sending your message.</p>
+  <p class="colorW">will hear from us soon!</p>
+  <p class="colorG">Redirecting you to our homepage....</p>
+</div>

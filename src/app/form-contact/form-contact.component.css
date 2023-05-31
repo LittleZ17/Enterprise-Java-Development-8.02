@@ -1,0 +1,83 @@
+.form-column {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Permanent Marker", cursive;
+  color: var(--c-text);
+}
+.inputs {
+  border: 0.1px unset var(--c-text);
+  border-radius: 15px;
+  padding: 3% 5%;
+  box-shadow: var(--shadow);
+  margin-top: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+.area {
+  resize: none;
+}
+.error{
+  color: var(--c-red);
+}
+button {
+  align-self: center;
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 35px;
+  color: white;
+  background-color: var(--c-purple);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease;
+}
+
+.disabled-btn{
+  background-color: var(--c-grey);
+  color: var(--c-text);
+
+}
+
+button:hover {
+  background-color: var(--c-green);
+}
+
+.msg{
+  background-color: var(--c-purple);
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  left: 550px;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: "Permanent Marker", cursive;
+  color: var(--c-text);
+  font-size: 20px;
+}
+.msg .colorW{
+  color: var(--c-white);
+  font-size: 35px;
+
+}
+.msg .colorG{
+  color: var(--c-grey);
+  font-size: 28px;
+  font-family: "Quicksand", sans-serif;
+}
+.msg span{
+  font-size: 70px;
+}
